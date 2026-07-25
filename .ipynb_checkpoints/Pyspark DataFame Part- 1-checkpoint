@@ -1,0 +1,258 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "49ae1479-83c0-44eb-807e-278253f58f63",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "!pip install pyspark"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "4dd8da26-7bc7-4829-9387-47bc941f19bb",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Welcome\n",
+      "Collecting pyspark\n",
+      "  Using cached pyspark-4.1.2.tar.gz (455.4 MB)\n"
+     ]
+    }
+   ],
+   "source": [
+    "print('Welcome')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "a11e1744-5044-4eda-b80e-6e0cc92e3259",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import pyspark"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "dd3e2d46-f68e-414f-8e0f-c66f57e2b1e1",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "!pip install --upgrade pip"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "65ac71f7-1fa3-47e5-bfc6-ffe882082548",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "!pip install pyspark findspark"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "eb1a7106-cfc9-4f58-b43d-5454466b5070",
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "ModuleNotFoundError",
+     "evalue": "No module named 'findspark'",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[31m---------------------------------------------------------------------------\u001b[39m",
+      "\u001b[31mModuleNotFoundError\u001b[39m                       Traceback (most recent call last)",
+      "\u001b[36mCell\u001b[39m\u001b[36m \u001b[39m\u001b[32mIn[1]\u001b[39m\u001b[32m, line 1\u001b[39m\n\u001b[32m----> \u001b[39m\u001b[32m1\u001b[39m \u001b[38;5;28;01mimport\u001b[39;00m findspark\n\u001b[32m      2\u001b[39m findspark.init()\n\u001b[32m      3\u001b[39m \u001b[38;5;28;01mimport\u001b[39;00m pyspark\n\u001b[32m      4\u001b[39m print(\u001b[33m\"PySpark is working!\"\u001b[39m)\n",
+      "\u001b[31mModuleNotFoundError\u001b[39m: No module named 'findspark'"
+     ]
+    }
+   ],
+   "source": [
+    "import findspark\n",
+    "findspark.init()\n",
+    "import pyspark\n",
+    "print(\"PySpark is working!\")\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "91c2b437-7427-455d-b03f-8a3b993d536e",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Collecting findspark\n",
+      "  Downloading findspark-2.0.1-py2.py3-none-any.whl.metadata (352 bytes)\n",
+      "Downloading findspark-2.0.1-py2.py3-none-any.whl (4.4 kB)\n",
+      "Installing collected packages: findspark\n",
+      "Successfully installed findspark-2.0.1\n"
+     ]
+    }
+   ],
+   "source": [
+    "!pip install findspark"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "da65d2b6-b839-49ca-9323-3ef66aa712ad",
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "ValueError",
+     "evalue": "Couldn't find Spark, make sure SPARK_HOME env is set or Spark is in an expected location (e.g. from homebrew installation).",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[31m---------------------------------------------------------------------------\u001b[39m",
+      "\u001b[31mValueError\u001b[39m                                Traceback (most recent call last)",
+      "\u001b[36mCell\u001b[39m\u001b[36m \u001b[39m\u001b[32mIn[1]\u001b[39m\u001b[32m, line 2\u001b[39m\n\u001b[32m      1\u001b[39m \u001b[38;5;28;01mimport\u001b[39;00m findspark\n\u001b[32m----> \u001b[39m\u001b[32m2\u001b[39m findspark.init()\n\u001b[32m      3\u001b[39m \u001b[38;5;28;01mimport\u001b[39;00m pyspark\n\u001b[32m      4\u001b[39m print(\u001b[33m\"PySpark is working!\"\u001b[39m)\n",
+      "\u001b[36mFile \u001b[39m\u001b[32m~\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\findspark.py:143\u001b[39m, in \u001b[36minit\u001b[39m\u001b[34m(spark_home, python_path, edit_rc, edit_profile)\u001b[39m\n\u001b[32m    121\u001b[39m \u001b[38;5;250m\u001b[39m\u001b[33;03m\"\"\"Make pyspark importable.\u001b[39;00m\n\u001b[32m    122\u001b[39m \n\u001b[32m    123\u001b[39m \u001b[33;03mSets environment variables and adds dependencies to sys.path.\u001b[39;00m\n\u001b[32m   (...)\u001b[39m\u001b[32m    139\u001b[39m \u001b[33;03m    configure and import pyspark.\u001b[39;00m\n\u001b[32m    140\u001b[39m \u001b[33;03m\"\"\"\u001b[39;00m\n\u001b[32m    142\u001b[39m \u001b[38;5;28;01mif\u001b[39;00m \u001b[38;5;129;01mnot\u001b[39;00m spark_home:\n\u001b[32m--> \u001b[39m\u001b[32m143\u001b[39m     spark_home = \u001b[30;43mfind\u001b[39;49m\u001b[30;43m(\u001b[39;49m\u001b[30;43m)\u001b[39;49m\n\u001b[32m    145\u001b[39m \u001b[38;5;28;01mif\u001b[39;00m \u001b[38;5;129;01mnot\u001b[39;00m python_path:\n\u001b[32m    146\u001b[39m     python_path = os.environ.get(\u001b[33m\"\u001b[39m\u001b[33mPYSPARK_PYTHON\u001b[39m\u001b[33m\"\u001b[39m, sys.executable)\n",
+      "\u001b[36mFile \u001b[39m\u001b[32m~\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\findspark.py:46\u001b[39m, in \u001b[36mfind\u001b[39m\u001b[34m()\u001b[39m\n\u001b[32m     43\u001b[39m         spark_home = os.path.dirname(pyspark.\u001b[34m__file__\u001b[39m)\n\u001b[32m     45\u001b[39m \u001b[38;5;28;01mif\u001b[39;00m \u001b[38;5;129;01mnot\u001b[39;00m spark_home:\n\u001b[32m---> \u001b[39m\u001b[32m46\u001b[39m     \u001b[38;5;28;01mraise\u001b[39;00m \u001b[38;5;167;01mValueError\u001b[39;00m(\n\u001b[32m     47\u001b[39m         \u001b[33m\"\u001b[39m\u001b[33mCouldn\u001b[39m\u001b[33m'\u001b[39m\u001b[33mt find Spark, make sure SPARK_HOME env is set\u001b[39m\u001b[33m\"\u001b[39m\n\u001b[32m     48\u001b[39m         \u001b[33m\"\u001b[39m\u001b[33m or Spark is in an expected location (e.g. from homebrew installation).\u001b[39m\u001b[33m\"\u001b[39m\n\u001b[32m     49\u001b[39m     )\n\u001b[32m     51\u001b[39m \u001b[38;5;28;01mreturn\u001b[39;00m spark_home\n",
+      "\u001b[31mValueError\u001b[39m: Couldn't find Spark, make sure SPARK_HOME env is set or Spark is in an expected location (e.g. from homebrew installation)."
+     ]
+    }
+   ],
+   "source": [
+    "import findspark\n",
+    "findspark.init()\n",
+    "import pyspark\n",
+    "print(\"PySpark is working!\")\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "cafe555b-cf83-48df-8d10-215220bcc82d",
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "ModuleNotFoundError",
+     "evalue": "No module named 'pyspark'",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[31m---------------------------------------------------------------------------\u001b[39m",
+      "\u001b[31mModuleNotFoundError\u001b[39m                       Traceback (most recent call last)",
+      "\u001b[36mCell\u001b[39m\u001b[36m \u001b[39m\u001b[32mIn[2]\u001b[39m\u001b[32m, line 1\u001b[39m\n\u001b[32m----> \u001b[39m\u001b[32m1\u001b[39m \u001b[38;5;28;01mimport\u001b[39;00m pyspark\n\u001b[32m      2\u001b[39m \u001b[38;5;28;01mfrom\u001b[39;00m pyspark.sql \u001b[38;5;28;01mimport\u001b[39;00m SparkSession\n\u001b[32m      3\u001b[39m \n\u001b[32m      4\u001b[39m spark = SparkSession.builder.appName(\u001b[33m\"TestApp\"\u001b[39m).getOrCreate()\n",
+      "\u001b[31mModuleNotFoundError\u001b[39m: No module named 'pyspark'"
+     ]
+    }
+   ],
+   "source": [
+    "import pyspark\n",
+    "from pyspark.sql import SparkSession\n",
+    "\n",
+    "spark = SparkSession.builder.appName(\"TestApp\").getOrCreate()\n",
+    "print(\"PySpark is working!\")\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "16d5798c-3f2f-46c7-98fb-efd6aac837b4",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "C:\\Users\\MANOJ\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\n"
+     ]
+    }
+   ],
+   "source": [
+    "import sys\n",
+    "print(sys.executable)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "3d8fb6e6-df1d-4f5f-8849-7ff5eddd5bef",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "from pyspark.sql import SparkSession\n",
+    "\n",
+    "spark = SparkSession.builder.appName(\"TestApp\").getOrCreate()\n",
+    "print(\"PySpark is working!\")\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "28bc7b1b-3e42-4527-ad33-a30088f71dc9",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "hello\n"
+     ]
+    }
+   ],
+   "source": [
+    "print('hello')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "f5970abd-dc49-46ed-96ad-769749505614",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "from pyspark.sql import SparkSession\n",
+    "\n",
+    "spark = SparkSession.builder \\\n",
+    "    .appName(\"TestApp\") \\\n",
+    "    .master(\"local[*]\") \\\n",
+    "    .getOrCreate()\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "dc2742dc-f7b1-4ef2-9424-f075ec620edc",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.13.14"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
