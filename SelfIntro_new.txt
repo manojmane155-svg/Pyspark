@@ -1,0 +1,15 @@
+Good morning, and thank you for the opportunity. My name is Manoj Mane, and I have over 10 years of experience in Data Engineering, ETL Development, and Production Support. Currently, I am working as a Technical Lead at HCL Technologies, where I lead large scale data processing projects for clients like Transamerica and MasterCard.
+
+I specialize in Informatica PowerCenter and Cloud Data Integration, PySpark, and Python, with strong exposure to orchestration tools such as Apache Airflow and NiFi. My work has focused on building scalable ETL pipelines, optimizing SQL queries, and ensuring compliance in critical financial and insurance applications.
+
+Beyond technical delivery, I have consistently improved performance metrics, maintained SLA compliance, and collaborated across business and infrastructure teams to drive process improvements. My strength lies in combining technical depth with leadership, ensuring both accuracy and efficiency in data solutions.
+
+I am excited to bring this blend of technical expertise and leadership to contribute to your organization’s data initiatives.
+
+2)
+
+Hello, my name is Manoj Mane. I have over 10 years of experience in Data Engineering and ETL Development, currently working as a Technical Lead at HCL Technologies. My expertise includes Informatica, PySpark, and Python, with strong exposure to cloud platforms and orchestration tools like Apache Airflow. I’ve led projects for clients such as Transamerica and MasterCard, consistently improving performance, ensuring SLA compliance, and delivering accurate data solutions. I’m eager to bring this blend of technical depth and leadership to contribute to your organization’s success.
+
+3)
+
+“I’m Manoj Mane, a Technical Lead with 10+ years in Data Engineering and ETL, specializing in Informatica, PySpark, and cloud based data solutions for financial and insurance clients
