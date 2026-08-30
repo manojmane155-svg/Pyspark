@@ -1,0 +1,558 @@
+Q-1> WHAT IS PYTHON?
+
+ANS:- Python was created by guido van roussum in 1991.
+      It is general-purpose programming language.
+      it is interpreted,object-oriented, high-level language.
+      It is platform independent,widely used in AI,ML.
+      It is used to develpe almost any type of application.
+      it is easy to learn and require less code to develop the app.
+      it consists of many libraries and inbuilt functions that make it easy to maintain and portable.
+---------------------------------------------------------------------------------------------------------------
+Q-2> WHAT ARE THE ADVANTAGES OF PYTHON?
+
+ANS:- It is free and open source.
+      it is portable.
+      it is extensible.
+      it is objected oriented .
+      it is built in data structure.
+
+---------------------------------------------------------------------------------------------------------------
+Q-3> WHAT IS PEP 8?
+
+ANS:-PEP 8 is a coding convention which specifies a set of guidelines, about how to write your python
+     code more readable.
+
+---------------------------------------------------------------------------------------------------------------
+Q-4> WHAT DO YOU MEAN BY PYTHON LITERALS?
+
+ANS:- Python literals can be defined as data which are given in a variable or constant.
+      There are 6 types of literals in python:
+      String Literals:-
+                   some text in single or double quote
+      Character Literals:-
+                    single character inclosed in quotes       
+      Numeric Literals:-
+                  integer,float,complex
+      Boolean Literals:-
+                  True,False
+      Special Literals:-
+                  None
+      Literal Collections:-
+                   list,tuple,dictionary,set
+
+---------------------------------------------------------------------------------------------------------------
+Q-5> EXPLAINS PYTHON FUNCTIONS?
+
+ANS:- A function is a section of program or a block of code that is written once and can be executed
+      whenever required in the program.
+      There are two types of functions:
+      1. Built-in-function
+      2. User-defined function
+
+---------------------------------------------------------------------------------------------------------------
+Q-6> WHAT IS PYTHON ZIP() FUNCTION?
+
+ANS:- The python zip() function is used to transform multiple lists i.e list1,list2,list3 into a single
+      list of tuples by taking the corresponding elements of lists that are passed as parameters.
+
+---------------------------------------------------------------------------------------------------------------
+Q-7> WHICH ARE THE FILE RELATED LIBRARIES/MODULES IN PYTHON?
+
+ANS:- Python provides libraries/modules with functions that facilate you to manipulate text files and
+      binary files on file system. By using these libraries,you can create files,update their contents,
+      copy and delete files. 
+      These libraries are :- os,os.path & shutil.
+      OS & OS.PATH:- These libraries include functions for accessing the filesystem.
+      SHUTIL:- This library is used to copy and delete the files.
+
+---------------------------------------------------------------------------------------------------------------
+Q-8> WHICH ARE THE DIFFRENT FILE PROCESSING MODES SUPPORTED BY PYTHON?
+
+ANS:- python provides three modes to open files:
+      1.Read-only mode
+      2.Write-only mode
+      3.Read-write mode
+
+---------------------------------------------------------------------------------------------------------------
+Q-9> HOW MANY TYPES OF OPERATOR IN PYTHON?
+
+ANS:- There are six types of operator in python.
+      1.Arithmetic operator
+      2.Relations operator
+      3.Assignment operator
+      4.Logical operator
+      5.Memebership operator
+      6.Identity operator
+      7.Bitwise operator
+
+---------------------------------------------------------------------------------------------------------------
+Q-10> WHAT IS OPERATOR IN PYTHON?
+
+ANS:- An Operator is a particular symbol which is used on some values and produces an output as result
+      for ex:- 3+4=7
+          here + and = are operators.
+
+---------------------------------------------------------------------------------------------------------------
+Q-11> HOW IS PYTHON INTREPRETED LANGUAGE?
+
+ANS:- python is an interpreted language,which means the source code of a python program is converted
+      into bytecode that is then executed by the python virtual machine.
+      Program written in interpreted language does not need any compilation step.
+     
+------------------------------------------------------------------------------------------------------------
+Q-11> WHAT ARE DIFFERENCES BETWEEN LISTS AND TUPLES IN PYTHON?
+
+ANS:- Lists and Tuples both are sequencial data types that can store a collection of data in python.
+      The data stored in both sequences can have different data types.
+      Lists are represented with square brackets while tuples are represented with paranthesis.
+      The key difference between the two is that lists are mutable data structure,
+      Tuple on the other hand are immutable.This means that lists can be modified,but
+      Tuple remain constant and cannot be modified in any manner.
+
+-----------------------------------------------------------------------------------------------------------------
+Q-12> WHAT IS __INIT__ IN PYTHON?
+
+ANS:- __INIT__ is a reserved method in python classes.It is known as constructor in python classes.
+      Constructor is used to create instant member.This method automatically called when an 
+      object of that class is created.
+      in java and c++ constructor name is same as the class name but in python it is compilsory to 
+      create constructor with the name __init__.
+
+---------------------------------------------------------------------------------------------------------------
+Q-13> WHAT IS THE USE OF BREAK AND CONTINUE ?
+
+ANS:- These two are keywords.Break and Continue statements can alter the flow of a normal loop.
+      BREAK:-
+         The break statement terminates the loop.Control of the program flow outside the body of the loop.
+      CONTINUE:-
+         The continue statement is used to skip the rest of the code inside a loop for the current iteration
+         only.Loop does not terminate but continues on with the next iteration.
+
+---------------------------------------------------------------------------------------------------------------
+Q-14> WHAT IS SLICING IN PYTHON?
+
+ANS:- As the name suggests,'slicing' is taking part of.
+      Slicing in python is a feature that enables us to access  a part of sequences like:-
+      string,tuples,and lists.
+      syntax of slicing:-
+        inside subscript operator we mention starting index then colon then end index then colon
+        then step.step is optional bydefault its value is +1.
+
+---------------------------------------------------------------------------------------------------------------
+Q-15> WHAT IS THE DIFFRENECE BETWEEN PYTHON ARRAY AND LIST ?
+
+ANS:- Array in python can only contains elements of same data type i.e.,data type of array should be homogenous.
+      List in pyton can contain elements of different data types i.e., data type of list can be heterogenous.
+      Arrays are fast while lists are slow.
+      
+---------------------------------------------------------------------------------------------------------------
+Q-16> HOW ARRAY IS CREATED IN PYTHON?
+
+ANS:- Array in python can be created by importing array module.
+      inside array module we have to call array fuction and pass data_type and value list to create an
+      array with that data type and with the given list value
+      syntax:- import array as arr
+               a=arr.array('i',[10,20,30])
+
+---------------------------------------------------------------------------------------------------------------
+Q-17>  HOW TO CREATE CONSTANT VARIABLE IN PYTHON?
+
+ANS:- First we have to install pconst library from pip.
+      then we have to import const module from pconst.
+      with the help to const module we can create constant variable in python.
+     for Ex:-if we want to create constant varibale p,
+          then const.p=10
+     Here p is the constant variable so we cannot change the value of p.
+
+---------------------------------------------------------------------------------------------------------------
+Q-18> WHAT IS LAMBDA IN PYTHON?
+
+ANS:-Lambda is an anonymous function in pyton that can accept any number of arguments but can only have a 
+     single expression.
+     SYNTAX:-
+        mul=lambda x,y:x*y
+     TO CALL:-
+        mul(4,5)
+---------------------------------------------------------------------------------------------------------------
+Q-19> WHAT IS TYPECASTING IN PYTHON?
+
+ANS:- Typecasting means changing one data type into another is known as typecasting.
+
+---------------------------------------------------------------------------------------------------------------
+Q-20> WHAT ARE TUPLE IN PYTHON?
+
+ANS:- Tuple is a collection data type and it is unchangable, it means that we cannot change the value of tuple.
+
+---------------------------------------------------------------------------------------------------------------
+Q-21> WHY PYTHON IS USED FOR FAST DEVELOPMENT CYCLE?
+
+ANS:-  python is different from major compiled languages,such as C and C++.
+       As the code is not needed to be compiled,python code can be readily 
+      changed and executed.This help for a fast development cycle.
+
+----------------------------------------------------------------------------------------------------------------
+Q-22> WHY PYTHON IS SLOWER THAN C AND C++?
+
+ANS:- Since the code is not directly compiled and executed and an addtional layer of the python virtual
+      machine is responsible for execution,Python code runs a little slow as compared to conventional 
+      language like C,C++,etc.
+               
+---------------------------------------------------------------------------------------------------------------
+Q-23> WHAT IS A DYNAMICALLY TYPED LANGUAGE?
+
+ANS:-Dynamic means data type are checked during execution.Python is an interpreted language.
+     It executes each statement line by line and thus type checking is done on the fly,during 
+     execution.Hence,python is a Dynamically Typed Language.
+
+---------------------------------------------------------------------------------------------------------------
+Q-24> WHAT IS STATICALLY TYPED AND DYNAMICALLY TYPED LANGUAGE?
+
+ANS:-Statically-typed language perform type checking at compile-time,while dynamically-typed language perform
+     type checking at run0-time.
+     statically-typed language require you to declare the data types of your variable before you use them,
+     while dynamically-typed language do not.
+
+---------------------------------------------------------------------------------------------------------------
+Q-25> WHAT ARE THE TYPES OF SCOPE VARIBALE?
+
+ANS:- There are commonly two types of scope variable:-
+     LOCAL SCOPE:- 
+             The Variables which are defined in the function are known as local variable.
+             These variables are defined in the function body and can only be accessed inside 
+             the function body , where it is declared.   
+     GLOBAL SCOPE:-
+             The variable which can be read or accessed from anywhere in the program is known as global scope.
+             These variable can be accessed inside and outside the function.
+
+----------------------------------------------------------------------------------------------------------------
+Q-26> WHAT ARE THE BENEFITS OF USING PYTHON?
+
+ANS:- The benefits of using python are:-
+
+      1.Easy to use
+      2.interpreted language
+      3.Dynamically typed language
+      4.Free and Open source
+      5.Extensive support for libraries
+      6.Portable
+
+---------------------------------------------------------------------------------------------------------------
+Q-27> WHAT ARE DICTIONARY AND LIST COMPREHENSIONS?
+
+ANS:- Dictionary and list comprehensions are just another concise way to define dictionary and list.
+      EXAMPLE:-
+          X=[i for i in <collection>]
+
+---------------------------------------------------------------------------------------------------------------
+Q-28> WHAT ARE THE COMMON BUILT-IN DATA TYPES IN PYTHON?
+
+ANS:-The common built in data types in python are:-
+
+      1.NUMBER
+            integer,float,complex
+          
+      2.LIST
+
+      3.TUPLE
+
+      4.STRING
+      
+      5.SET
+
+      6.DICTIONARY
+
+      7.BOOLEAN
+
+---------------------------------------------------------------------------------------------------------------
+Q-29> WHAT IS THE DIFFERENCE BETWEEN .PY AND .PYC FILES?
+
+ANS:- The .py files are the python source code files.while the pyc files contain the bytecode of the python 
+     files.The interpreter converts the source.py file to pyc.files.
+
+--------------------------------------------------------------------------------------------------------------
+Q-30> WHAT IS NAMESPACE IN PYTHON?
+
+ANS:- A namespace is a naming system used to make sure that names are unique to avoid nameing conflicts.
+
+---------------------------------------------------------------------------------------------------------------
+Q-31> HOW IS MEMORY MANAGED IN PYTHON?
+
+ANS:-Memory management in python is managed by PYTHON PRIVATE HEAP SPACE.The programmer does not have access
+     to this private heap. The python interpreter takes care of this.
+     The allocation of heap space for python objects is done by Python's memory manager.
+     Python also has an INBUILT GARBAGE COLLECTOR,which recycles all the unused memory and so that it can 
+     be available to the heap space.
+
+---------------------------------------------------------------------------------------------------------------
+Q-32> WHAT ARE THE POSITIVE AND NEGATIVE INDICES?
+
+ANS:-In the positive indices are applied the search beigns from left to the right.In the case of negative 
+     indices,the search begins from right to left.
+     for ex:-
+          Let the array list of size "n".In case of positive index  the first index is 0,then comes 1 and
+          until the last index is -1.
+          However in case of negative index the first index is -n,then -(n-1) until the last index will be -1.
+
+---------------------------------------------------------------------------------------------------------------
+Q-33> WHAT ARE PYTHON MODULES? NAME SOME COMMON BUILT-IN-MODULE IN PYTHON?
+
+ANS:-Python modules are files containing python code.This code can either be funtions classes or  variables.
+     A Python module is a .py file containing executable code.
+     Some of the commonly used built in modules are:-
+     1. OS
+     2.SYS
+     3.MATH
+     4.RANDOM
+
+---------------------------------------------------------------------------------------------------------------
+Q-34> WHAT ARE LOCAL VARIABLES AND GLOBAL VARIABLES IN PYTHON?
+
+ANS:-GLOBAL VARIABLES:-
+                  Variables declared outside a function or in global space are called global variable.
+                  These variables can be accessed by any function in the program.
+ 
+     LOCAL VARIABLES:-
+                  Any variable declared inside a function is known as a local variable. This varible is 
+                  present in the local space and not in the global space.
+                   
+                  When you try to access the local varible outside the any function,it will throw an error.
+
+--------------------------------------------------------------------------------------------------------------
+Q-35> IS INDENTATION REQUIRED IN PYTHON?
+
+ANS:- Indentation is necessary for python.It specifies a block of code.All code within loops,classes,functions
+      is specified within an indented block.It is usually done using four space character.If you code is not
+      indented necessarily,it will not execute accurately and will throw errors as will.     
+
+---------------------------------------------------------------------------------------------------------------
+Q-36> HOW DO YOU MODIFY A STRING IN PYTHON?
+
+ANS:-You cannot modify a string because it is a immutable data type.but if we want to modify then 
+      you have to first convert into list then update it by subscript operator and then by using
+     join method of string we can again convert into string.AS:-
+  
+    s = list("Hello zorld")
+      print(s)
+        ['H', 'e', 'l', 'l', 'o', ' ', 'z', 'o', 'r', 'l', 'd']
+
+     s[6] = 'W'
+
+      print(s)
+      ['H',e', 'l', 'l', 'o', ' ', 'W', 'o', 'r', 'l', 'd']
+
+     m= "".join(s)
+     print(m)
+       Hello world
+
+---------------------------------------------------------------------------------------------------------------
+Q-37> WHAT IS THE DIFFERENCE BETWEEN LIST METHOD APPEND() AND EXTEND()?
+ 
+ANS:-
+    APPEND:- Adds an element to a list.
+    EXTEND:- Concatenates the first list with another iterable (not necessary a list,it can be any iterable).
+  
+    x = [1, 2, 3]
+    x.append([4, 5])
+    print (x)
+      [1, 2, 3, [4, 5]]
+
+    x = [1, 2, 3] 
+    x.extend([4, 5])
+    print (x)
+      [1, 2, 3, 4, 5]
+    
+    x=[1,2,3]
+    x.entend((4,5))
+    print(x)
+      [1,2,3,4,5]
+
+---------------------------------------------------------------------------------------------------------------
+Q-38> WHY WE USE THE PASS STATEMENT IN PYTON?
+
+ANS:-The pass statement is used as a placeholder for future code. When the pass statement is executed,
+     nothing happens, Python has the syntactical requirement that code blocks cannot be empty.
+     Otherwise,it will  occur syntax error.
+
+---------------------------------------------------------------------------------------------------------------
+Q-39> WHAT IS CALLABLE? 
+
+ANS:- A callable is anything that can be called. 
+      A callable object allows you to use round parenthesis ( ) and eventually pass some parameters, 
+      just like functions.
+ 
+---------------------------------------------------------------------------------------------------------------
+Q-40> EXPLAIN SPLIT() AND JOIN() FUNCTION?
+
+ANS:- You can use split() function to split a string  to a list of strings based on a delimiter.
+      You can use join() function to join a list of strings  to give a single string based on a delimiter.
+
+---------------------------------------------------------------------------------------------------------------
+Q-41> WHAT IS PANDAS IN PYTHON?
+
+ANS:-Pandas is an open source python package that is mostly used for data science/data analysis and 
+        machine learning. It has a very rich set of data structure for data based operations.
+        It provides two fantastic data structure:- series and dataframes.
+        DATAFRAMES:- it is mutable datatypes present in pandas library. It provides support for heterogenous data.
+        PANDAS SERIES:- series is one dimensional pandas data structure present in pandas library that supports 
+                                  data of almost any types.
+                                  It supports multiple operations and is used for single dimenshional data operation.
+
+-------------------------------------------------------------------------------------------------------------------------
+Q-42> HOW DO YOU ADD SINGLE-LINE AND MULTI-LINE COMMENTS IN PYTHON?
+
+ANS:- SINGLE LINE COMMENTS:- # is used to denote single line comments.
+         MULTI-LINE COMMENTS:-  """ """(Triple quotes are used across many lines)
+
+--------------------------------------------------------------------------------------------------------------------------
+Q-43> WHAT IS THE EFFICIENT WAY TO ADD ELEMENT TO A TUPLE OR STRING?
+
+ANS:- Tuples are immutable datatypes in python.
+       * you cannot add elements to an existing tuple.
+       * A new one must be created if the value are to be changed!
+
+------------------------------------------------------------------------------------------------------------------------------
+Q-44> WHAT IS DICTIONARY IN PYTHON?
+
+ANS:- A Python dictionary is a collection of items with keys and values pair. It is written in curly brackets.
+         They are optimized to retrieve value for known keys.
+
+------------------------------------------------------------------------------------------------------------------------------
+Q-45>  WHAT IS WITH STATEMENT USED FOR IN PYTHON?
+
+ANS:-            
+
+------------------------------------------------------------------------------------------------------------------------------
+Q-46> WHAT IS A MAP() FUNCTION IN PYTHON?
+
+ANS:- The map() function in python is used for applying a  function on all elements of a specified iterable.
+       * it consists of two parameters, function_name  and iterable.    
+
+-----------------------------------------------------------------------------------------------------------------------------
+Q-47> WHAT IS DIFFERENCE BETWEEN NUMPY AND SCIPY?
+
+ANS:-  Numpy stands for Numerical python while Scipy stands for Scientific python.
+       * Numpy is the basic library for defining array and simple mathematical problems.
+       * Scipy is used for more complex problems like numerical integration and machine learning and so on.
+
+------------------------------------------------------------------------------------------------------------------------------
+Q-48> HOW TO REMOVE SPACES FROM A STRING IN PYTHON?
+
+ANS:- Spaces can be removed from a string in python by using strip() or replace() functions.
+        * Strip() function is used to remove the leading and trailing white space while the replace() fucnction
+           is used to remove all the white spaces in the string.
+
+    for ex:-   a="ravi kumar"
+                 b=a.replace(" ", "");
+                 print(b) --> ravikumar
+
+-----------------------------------------------------------------------------------------------------------------------------------
+Q-49> EXPLAIN THE FILE PROCESSING MODES THAT PYTHON SUPPORTS?
+
+ANS:- There are six file processing modes in python:
+      
+       1. read-only mode(r)
+       2. write-only mode(w)
+       3. append-only mode(a)
+       4.r++ mode
+       5.w++ mode
+       6.a++ mode
+ 
+------------------------------------------------------------------------------------------------------------------------------------
+Q-50> EXPLAIN ALL THE MODES?
+
+ANS:-
+
+------------------------------------------------------------------------------------------------------------------------------------
+Q-51>WHAT IS UNNITEST IN PYTHON?
+
+ANS:- Unittest is a unit testing framework in python.
+
+-----------------------------------------------------------------------------------------------------------------------------------
+Q-52> HOW DO YOU DELETE A FILE IN PYTHON?
+
+ANS:- We can delete a file by importing OS module.
+         ex:- os.remove(filename)
+
+-----------------------------------------------------------------------------------------------------------------------------------
+Q-53> HOW DO YOU CREATE AN EMPTY CLASS IN PYTHON?
+
+ANS:- To create an empty class we can use the pass command after the definition of the class object.
+         A pass is a statement in python that does nothing.
+
+------------------------------------------------------------------------------------------------------------------------------------
+Q-54> WHAT ARE PYTHON DECORATORS?
+
+ANS:- Decoratotrs are functions that take another functions as argument to modify its behaviour without changing the function itself.
+     *  These are useful when we want to dynamically increase the functionality of a function without changing it.
+      
+-----------------------------------------------------------------------------------------------------------------------------------------------
+Q-55> WHAT DOES EARLY BINDING MEANS?
+
+ANS:-  Early binding is a popular concept in OOPS that is used for many purposes.
+      *  Majorly, it is used to assign values during compile time to save a lot of time during the execution of the entire project.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
